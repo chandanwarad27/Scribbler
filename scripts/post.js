@@ -36,7 +36,8 @@ function onEdit(){
     document.getElementById("editHeading").style.border = "none";
 
     document.getElementById("editButton").innerHTML = 'Edit<i class="fa fa-edit" style="padding-left: 4px;"></i>';
-    editMode = false;
+    document.getElementById("editButton").disabled = true;
+    
 }
 
    
@@ -57,8 +58,10 @@ window.onload = function () {
     if (queryString["heading"] != null && queryString["author"] != null) {
         var heading = queryString["heading"] ;
         var author  =  queryString["author"];
+        var content = queryString["content"];
         document.getElementsByClassName("heading-content")[0].innerHTML = heading;
         document.getElementsByClassName("author-name")[0].innerHTML = author;
+        document.getElementsByClassName("post-content")[0].innerHTML = content;
     }
     document.getElementById('comments').style.visibility = 'hidden';
 
