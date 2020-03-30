@@ -1,12 +1,73 @@
-#main-header {
-    color: blue;
-    font-family: 'Montez', cursive;
+body{
+    background-image: url(../images/background.jpg);
+    width: auto;
+     /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  
 }
 
-.signingDetails {
-    float: right;
+.header-class{
+    height: 60px;
+    width: auto;
+    background-color: lightgrey;
+    
 }
 
-#sub-header {
-    font-family: 'Ubuntu Mono';
+.header-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    
+
+}
+
+
+.side-logo{ 
+    margin-left: 5px;
+    padding: 1px;
+    margin: 2px;
+}
+
+.home-buttons{
+    margin-left: 1000px;
+    margin-top: 6px;
+    
+    
+}
+
+ .button-class{
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    background-color: blue; 
+     color:white
+} 
+
+
+.post-buttons{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center; 
+    
+}
+
+
+.centre-button{
+    position: relative;
+    top: 50%;
+    transform: translateY(750%);
+    margin: 5px;
+    background-color: darkgoldenrod;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
 }
